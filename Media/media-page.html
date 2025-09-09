@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <div class="image-container">
+        <h3>Image</h3>
+        <img src="./assets/media.jpg" alt="Media Image" title="Media" width="400px" height="400px"/>
+    </div>
+    <div class="picture-container">
+        <h3>Picture</h3>
+         <picture>
+            <source media="(min-width: 650px)" srcset="./assets/food.jpg" width="600px">
+            <source media="(min-width: 465px)" srcset="./assets/car.jpg">
+            <img src="./assets/girl.jpg" width="400px" height="400px" title="Picture" alt="Girl Image">
+        </picture> 
+    </div>    
+    <div class="video-container">
+        <h3>Video</h3>
+         <video width="350" height="350" controls>
+            <source src="./assets/video.mp4" type="video/mp4">
+        </video> 
+    </div>    
+    <div class="yt-video-container">
+        <h3>YouTube Video</h3>
+        <iframe 
+            src="https://www.youtube.com/embed/d56mG7DezGs" 
+            width="500" 
+            height="400" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen 
+            title="TypeScript Tutorial for Beginners">
+        </iframe>
+    </div>     
+    <div class="google-map-container">
+        <h3>My favorite place</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193571.4387223327!2d-74.11808638521396!3d40.70582544422161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b589353fd9%3A0xe54f9c70d5956b1f!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1634842513650!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>                         
+</body>
+</html>
